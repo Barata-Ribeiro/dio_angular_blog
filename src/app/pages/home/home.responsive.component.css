@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+  .container__articles {
+    grid-template-columns: auto;
+    align-items: center;
+  }
+
+  .articles__others {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+  }
+}
