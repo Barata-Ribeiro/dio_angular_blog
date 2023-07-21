@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu-title',
@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
     './menu-title.responsive.component.css',
   ],
 })
-export class MenuTitleComponent {}
+export class MenuTitleComponent {
+  @Input() blogTitle: string = '';
+}

@@ -1,25 +1,16 @@
 <article class="container__big-card">
   <div class="big-card__photo">
-    <img
-      src="https://global-uploads.webflow.com/601be0f0f62d8b2e2a92b830/645b6de48a3c745dec011fd2_angular-16.png"
-      alt="..."
-      height="200px"
-    />
+    <img src="{{ photoCover }}" alt="{{ photoAlt }}" height="200px" />
   </div>
   <div class="big-card__title">
     <h1>
-      <a href="#"
-        >There's a new Angular version! It's time to learn about it!</a
-      >
+      <a href="#">{{ cardTitle }}</a>
     </h1>
   </div>
   <div class="big-card__description">
     <p>
       <a href="#">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a aliquam
-        dolorem officiis magni at. Molestiae dignissimos aliquid modi saepe.
-        Quasi voluptatem voluptas explicabo, dicta culpa provident praesentium
-        ea magni!
+        {{ cardDescription }}
       </a>
     </p>
   </div>

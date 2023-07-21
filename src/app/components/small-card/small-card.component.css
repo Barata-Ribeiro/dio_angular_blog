@@ -22,5 +22,5 @@
 
 .small-card__separator {
   align-self: center;
-  width: 95%;
+  width: calc(100% - 1.125rem);
 }
