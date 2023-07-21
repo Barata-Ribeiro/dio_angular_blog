@@ -13,7 +13,8 @@
 }
 
 .small-card__photo > img {
-  max-width: 12.5rem;
+  max-width: 16rem;
+  aspect-ratio: 1 / 0.5;
 }
 
 .small-card__title > h1 {

@@ -4,6 +4,7 @@
   grid-template-columns: repeat(2, auto);
   gap: 1.125rem;
   justify-content: center;
+  min-height: 70vh;
 }
 
 .articles__others {
