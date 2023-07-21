@@ -1,0 +1,26 @@
+.container__small-card {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.container__small-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.125rem;
+}
+
+.small-card__photo > img {
+  max-width: 12.5rem;
+}
+
+.small-card__title > h1 {
+  font-size: 1rem;
+}
+
+.small-card__separator {
+  align-self: center;
+  width: 95%;
+}

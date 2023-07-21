@@ -1,3 +1,13 @@
 .container__articles {
   margin-top: 1.875rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1.125rem;
+  justify-content: center;
+}
+
+.articles__others {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
 }
