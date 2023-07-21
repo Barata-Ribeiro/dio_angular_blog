@@ -1,16 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { dataSimulation } from '../../data/dataSimulation';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css'],
 })
-export class ContentComponent {
-  photoCover: string =
-    'https://disneyplusbrasil.com.br/wp-content/uploads/2021/05/Tony-Stark-Substituto.jpg';
-  photoAlt: string = 'Tony Stark looking at camera with his blaster aimed.';
-  photoCaption: string = 'Tony Star is Iron Man!';
-  contentTitle: string = 'Shocking! Tony Stark is Iron Man.';
-  contentDescription: string =
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, cupiditate. Corrupti amet ex debitis modi voluptate architecto nemo quod, labore illum voluptas aut sunt reiciendis, ea a, velit blanditiis quo.';
+export class ContentComponent implements OnInit {
+  photoCover: string = '';
+  photoAlt: string = '';
+  photoCaption: string = '';
+  contentTitle: string = '';
+  contentNewsArticle: string = '';
+
+  private id: string | null = '0';
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((value) => (this.id = value.get('id')));
+    this.setValuesToComponent(this.id);
+  }
+
+  setValuesToComponent(id: string | null) {
+    const result = dataSimulation.filter((article) => article.id === id)[0];
+
+    this.contentTitle = result.articleTitle;
+    this.contentNewsArticle = result.completeArticle;
+    this.photoCover = result.photo;
+    this.photoAlt = result.photoTitle;
+    this.photoCaption = result.photoCaption;
+  }
 }

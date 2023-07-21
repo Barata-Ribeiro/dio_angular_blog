@@ -1,28 +1,21 @@
 <main class="container__articles">
   <section class="articles__main">
     <app-big-card
-      photoCover="https://cdn.britannica.com/49/182849-050-4C7FE34F/scene-Iron-Man.jpg"
-      photoAlt="This is the Iron Man"
-      cardTitle='Novo "Homem de Ferro" anunciado!'
-      cardDescription='Marvel studios anuncia novo filme do "Homem de Ferro," não perca. Agora você pode assistir ao filme no conforto da sua casa. Fique ligado nas assinaturas do serviço.'
+      *ngFor="let article of articles.slice(0, 1)"
+      [newsId]="article.id"
+      [photoCover]="article.photo"
+      [photoAlt]="article.photoTitle"
+      [cardTitle]="article.articleTitle"
+      [cardDescription]="article.articleDescription"
     ></app-big-card>
   </section>
   <section class="articles__others">
     <app-small-card
-      photoCover="https://disneyplusbrasil.com.br/wp-content/uploads/2021/07/Series-Marvel-Disney-Plus-1024x576.jpg"
-      photoAlt="Image of Marvel series on disney"
-      smallCardTitle="Checkout these new Marvel's TV series! People can't stop commenting
-          about it!"
-    ></app-small-card>
-    <app-small-card
-      photoCover="https://images.thedirect.com/media/article_full/marvel-posters-ranked.jpg"
-      photoAlt="Posters of Marvel movies"
-      smallCardTitle="Marvel's Cosmic Odyssey: Exploring the Expansive Universe of Future Movies"
-    ></app-small-card>
-    <app-small-card
-      photoCover="https://static1.moviewebimages.com/wordpress/wp-content/uploads/article/ltC2hp6dVsadoWkatO4quYYjn1vV5p.jpg"
-      photoAlt="Marvels multiverse"
-      smallCardTitle="From Galaxies to Multiverses, Marvel's Cinematic Universe Enters a New Era of Cosmic Wonder"
+      *ngFor="let article of articles.slice(1, 4)"
+      [newsId]="article.id"
+      [photoCover]="article.photo"
+      [photoAlt]="article.photoTitle"
+      [smallCardTitle]="article.articleTitle"
     ></app-small-card>
   </section>
 </main>
