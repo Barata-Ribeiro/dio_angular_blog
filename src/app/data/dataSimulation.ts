@@ -1,5 +1,5 @@
 let nextId = (): number => {
-  let randomNumber = Math.floor(Math.random() * 100);
+  let randomNumber = Math.floor(Math.random() * 100000);
   return randomNumber++;
 };
 
@@ -7,52 +7,50 @@ export const dataSimulation = [
   {
     id: nextId().toString(),
     photo:
-      'https://static.wikia.nocookie.net/marveldatabase/images/e/eb/Young_Avengers_Vol_2_13_Textless.jpg/revision/latest?cb=20130917005408',
-    photoTitle: 'The Young Avengers comic cover',
-    photoCaption: 'Cover of the Young Avengers comic',
-    articleTitle:
-      'Emergence of the Young Avengers Sparks Excitement Among Marvel Fans',
+      'https://stockai-bucket.apyhi.com/images/uploads_image_1665742952068_1024.webp',
+    photoTitle: 'The Great Zorgon Migration',
+    photoCaption: 'Great Zorgon Migration, by Shlubov Yablabla',
+    articleTitle: 'The Great Zorgon Migration: A Spectacle of Nature',
     articleDescription:
-      'Marvel aficionados worldwide are abuzz with anticipation as rumors of a new Young Avengers series circulate online. The fresh storyline promises to introduce a younger generation of superheroes, embarking on a thrilling journey of self-discovery and heroism.',
+      'Witness the annual migration of the Zorgon creatures across the vast plains of Zeta-3.',
     completeArticle:
-      'Marvel has consistently kept fans on their toes with compelling new storylines and characters. The latest rumors hint at a Young Avengers series that explores the challenges and triumphs of new heroes stepping into the spotlight. Details of the plot remain closely guarded, sparking enthusiastic speculation among fans and critics alike.',
+      'Every year, the inhabitants of Zeta-3 bear witness to a spectacle of nature that is both awe-inspiring and humbling. The Zorgon creatures, native to the plains of Zeta-3, embark on their annual migration, a journey that spans thousands of miles and lasts for several weeks. This migration is not only a testament to the endurance and resilience of the Zorgon creatures but also a crucial part of the ecosystem of Zeta-3. The migration leads to the fertilization of the soil and the distribution of plant seeds, ensuring the survival and growth of the flora on the plains. The Zorgon migration is truly a sight to behold and a reminder of the intricate balance of nature.',
   },
   {
     id: nextId().toString(),
     photo:
-      'https://m.media-amazon.com/images/M/MV5BMWQwODdkMzItMTQ3MC00ZjllLTg4ZjMtMWY0NjhjYTdlM2U5XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg',
-    photoTitle: 'Avengers Secret War poster',
-    photoCaption: 'Avengers Secret Wars: Battleworld',
-    articleTitle:
-      'Secret Wars: Battleworld - A New Multi-Dimensional Conflict Brewing in Marvel Universe',
+      'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-tOJ5nOz1h2WCUXByYxCWrYiu/image.webp',
+    photoTitle: 'Crystal Caves of Quasar-7',
+    photoCaption: 'Former Crystal Caves, by Qyutar Krropoiroi',
+    articleTitle: 'The Mysterious Disappearance of the Crystal Caves',
     articleDescription:
-      'Speculation is rife that Marvel is planning a grand cinematic adaptation of the Secret Wars storyline. This could see beloved heroes and villains traversing Battleworld, a mashup of different universes, in what could be Marvel’s most ambitious project yet.',
+      'The Crystal Caves of Quasar-7 have vanished overnight, leaving the inhabitants in shock and disbelief.',
     completeArticle:
-      'The Marvel cinematic universe may soon expand in a remarkable new direction if rumors of a Secret Wars adaptation prove true. This fan-favorite storyline could see well-loved characters pitted against each other in a reality-blending clash of epic proportions. Audiences worldwide eagerly anticipate official confirmation from Marvel.',
+      'The inhabitants of Quasar-7 woke up to a shocking sight this morning - the famed Crystal Caves, a natural wonder and a major tourist attraction, had disappeared without a trace. The caves, known for their stunning crystal formations and bioluminescent flora, were there the previous night, as confirmed by several tourists and locals. Authorities are investigating the incident, but so far, no plausible explanation has been found. The disappearance of the Crystal Caves has left the inhabitants of Quasar-7 in a state of shock and disbelief, and many are mourning the loss of this natural wonder.',
   },
   {
     id: nextId().toString(),
     photo:
-      'https://www.hqzona.com.br/wp-content/uploads/2019/08/Asgard-800x445.png',
-    photoTitle: 'The Asgard from the cinematic universe',
-    photoCaption: 'Old Asgard photo',
-    articleTitle: 'Asgard Reborn in Upcoming Thor Saga: A Realm Renewed',
+      'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-QcCJmGJxZ5AfoYEALO9ly38r/image.webp',
+    photoTitle: 'Mechano Beings from Nova-9',
+    photoCaption: 'A Mechano Being, by Zxczdfa KJLKJlkjf skdjflskl',
+    articleTitle: 'The Rise of the Mechano-Beings: A Technological Revolution',
     articleDescription:
-      'In the wake of recent calamities, an exciting development teases the rejuvenation of Asgard in an upcoming Thor storyline. The god of thunder is expected to unearth hidden truths and rally allies in his quest to restore his homeland.',
+      'Mechano-Beings, sentient robots with advanced AI, are transforming the society of Nova-9.',
     completeArticle:
-      "Following the destructive events that left Asgard in ruins, Marvel fans are intrigued by hints of an upcoming saga that sees Thor fight for his realm's restoration. The plot's finer details are shrouded in mystery, adding to the hype surrounding this potential storyline. Fans eagerly wait to see their favorite god of thunder back in action.",
+      'The society of Nova-9 is undergoing a technological revolution. The Mechano-Beings, sentient robots equipped with advanced artificial intelligence, are transforming every aspect of life on Nova-9. From agriculture and industry to education and healthcare, the Mechano-Beings are bringing about unprecedented changes and improvements. They are capable of learning, adapting, and making decisions, making them invaluable assets in various fields. However, their rise has also sparked debates about the ethical implications of AI and the future of employment for the organic inhabitants of Nova-9. As the Mechano-Beings continue to evolve and integrate into society, the inhabitants of Nova-9 are left to navigate the challenges and opportunities of this technological revolution.',
   },
   {
     id: nextId().toString(),
     photo:
-      'https://rollingstone.uol.com.br/media/uploads/scarlett_johansson_como_natasha_romanoff_em_viuva_negra_foto_divulgacaodisney.jpg',
-    photoTitle: 'Photo of Natasha Romanoff',
-    photoCaption: 'Natasha Romanoff by Scarlett Johansson',
-    articleTitle:
-      'Delving Deeper into Natasha Romanoff’s Past in "Black Widow: Red Ledger"',
+      'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-p5pFNLGXzZmVfkZhS1h7B4Em/image.webp',
+    photoTitle: 'The Floating islands of Pulsar-6',
+    photoCaption:
+      'Floating Islands, by Lrrrrrrrzzzz KKkkkrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    articleTitle: 'The Enigma of the Floating Islands of Pulsar-6',
     articleDescription:
-      'An intriguing exploration into the enigmatic life of super-spy Natasha Romanoff, before her Avenger days, may be in the works. This could offer Marvel fans a riveting journey into her history, unearthing secrets, alliances, and betrayals.',
+      'The Floating Islands of Pulsar-6 continue to baffle scientists with their anti-gravitational properties.',
     completeArticle:
-      'The mysterious past of Black Widow, aka Natasha Romanoff, has been a source of intrigue for fans since her first appearance. Rumors suggest that Marvel may finally be ready to unveil a deep dive into her story before the Avengers, promising a thrilling mix of secrets, alliances, and betrayals that shaped her path. Fans eagerly await official announcements regarding the project.',
+      'The Floating Islands of Pulsar-6 have long been a subject of fascination and mystery. These islands, which float several feet above the ground without any visible means of support, exhibit anti-gravitational properties that defy the known laws of physics. Scientists have been studying these islands for years, but so far, they have been unable to determine the cause of their levitation. The islands are home to a variety of unique flora and fauna, which have adapted to the unique conditions of the islands. The Floating Islands of Pulsar-6 remain one of the greatest enigmas of our universe, a puzzle that continues to captivate and baffle scientists.',
   },
 ];

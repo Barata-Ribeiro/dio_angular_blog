@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {} from '../../data/dataSimulation';
 import { dataSimulation } from '../../data/dataSimulation';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +9,6 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent {
   articles = dataSimulation;
-  private id: string | null = '0';
 
   constructor() {}
 }
