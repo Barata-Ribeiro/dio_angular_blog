@@ -1,0 +1,12 @@
+.container__menu-bar > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.container__menu-bar a {
+  padding: 0.5rem 1rem;
+}
+
+.container__menu-bar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
