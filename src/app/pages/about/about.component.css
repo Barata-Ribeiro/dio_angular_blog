@@ -1,0 +1,39 @@
+.container__about {
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.about__main-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about__sub-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0 10px;
+}
+
+.about__paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Links */
+
+.about__paragraph a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.about__paragraph a:hover {
+  text-decoration: underline;
+}
+
+.container__about::selection {
+  background-color: #ffa500;
+  color: #333;
+}

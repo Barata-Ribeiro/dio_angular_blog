@@ -4,11 +4,22 @@
   grid-template-columns: repeat(2, auto);
   gap: 1.125rem;
   justify-content: center;
-  min-height: 70vh;
 }
 
 .articles__others {
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
+}
+
+.home__separator {
+  margin: 1.875rem auto;
+  width: 90%;
+}
+
+.articles__more-news {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1.125rem;
+  margin-bottom: 1.875rem;
 }

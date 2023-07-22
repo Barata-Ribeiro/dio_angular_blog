@@ -19,3 +19,13 @@
     ></app-small-card>
   </section>
 </main>
+<hr class="home__separator" />
+<section class="articles__more-news">
+  <app-small-card
+    *ngFor="let article of articles.slice(4, 12)"
+    [newsId]="article.id"
+    [photoCover]="article.photo"
+    [photoAlt]="article.photoTitle"
+    [smallCardTitle]="article.articleTitle"
+  ></app-small-card>
+</section>
