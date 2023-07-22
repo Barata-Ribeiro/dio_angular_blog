@@ -1,0 +1,32 @@
+.not-found__container {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  min-height: 70vh;
+}
+
+.container__status-code h1 {
+  font-size: 96px;
+  margin: 0;
+  color: #ffa500;
+}
+
+.container__message p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.action__return-home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffa500;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.action__return-home:hover {
+  background-color: #ffcc33;
+}
