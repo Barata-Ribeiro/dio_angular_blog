@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { dataSimulation } from '../../data/dataSimulation';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-content',
@@ -16,9 +17,10 @@ export class ContentComponent implements OnInit {
 
   private id: string | null = '0';
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private titleService: Title) {}
 
   ngOnInit(): void {
+    this.titleService.setTitle('Article | Sector 67');
     this.route.paramMap.subscribe((value) => (this.id = value.get('id')));
     this.setValuesToComponent(this.id);
   }
