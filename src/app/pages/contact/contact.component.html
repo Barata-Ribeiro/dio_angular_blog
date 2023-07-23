@@ -1,0 +1,72 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+  <div class="contact-form__field">
+    <label for="name" class="contact-form__label">Name</label>
+    <input
+      id="name"
+      type="text"
+      formControlName="name"
+      class="contact-form__input"
+    />
+    <div
+      *ngIf="
+        contactForm.controls['name'].invalid &&
+        (contactForm.controls['name'].dirty ||
+          contactForm.controls['name'].touched)
+      "
+      class="contact-form__error"
+    >
+      Name is required
+    </div>
+  </div>
+
+  <div class="contact-form__field">
+    <label for="email" class="contact-form__label">Email</label>
+    <input
+      id="email"
+      type="email"
+      formControlName="email"
+      class="contact-form__input"
+    />
+    <div
+      *ngIf="
+        contactForm.controls['email'].errors?.['required'] &&
+        (contactForm.controls['email'].dirty ||
+          contactForm.controls['email'].touched)
+      "
+      class="contact-form__error"
+    >
+      Email is required
+    </div>
+    <div
+      *ngIf="
+        contactForm.controls['email'].errors?.['email'] &&
+        (contactForm.controls['email'].dirty ||
+          contactForm.controls['email'].touched)
+      "
+      class="contact-form__error"
+    >
+      Email is not in correct format
+    </div>
+  </div>
+
+  <div class="contact-form__field">
+    <label for="subject" class="contact-form__label">Subject</label>
+    <input
+      id="subject"
+      type="text"
+      formControlName="subject"
+      class="contact-form__input"
+    />
+  </div>
+
+  <div class="contact-form__field">
+    <label for="message" class="contact-form__label">Message</label>
+    <textarea
+      id="message"
+      formControlName="message"
+      class="contact-form__input contact-form__textarea"
+    ></textarea>
+  </div>
+
+  <button type="submit" class="contact-form__button">Submit</button>
+</form>
