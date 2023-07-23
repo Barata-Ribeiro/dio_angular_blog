@@ -1,8 +1,10 @@
 @media screen and (max-width: 768px) {
   .container__big-card {
-    align-items: center;
-    justify-content: center;
-    max-height: 30rem;
+    max-width: 100%;
+  }
+
+  .big-card__photo {
+    place-self: center;
   }
 
   .big-card__title > h1 {

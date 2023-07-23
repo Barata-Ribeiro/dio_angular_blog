@@ -9,4 +9,11 @@
     flex-direction: column;
     gap: 1.125rem;
   }
+
+  .articles__more-news {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1.125rem;
+    margin-bottom: 1.875rem;
+  }
 }

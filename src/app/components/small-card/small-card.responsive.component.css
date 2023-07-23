@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+  .container__small-card {
+    max-width: 100%;
+  }
+  .container__small-card-content {
+    align-items: flex-start;
+  }
+  .small-card__text {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem;
+  }
+  .small-card__title > h1 {
+    font-size: 1.25rem;
+  }
+  .small-card__description {
+    display: block;
+    color: grey;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .small-card__photo > img {
+    max-width: 16rem;
+    aspect-ratio: 1/1;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .container__small-card-content {
+    flex-direction: column;
+  }
+}
