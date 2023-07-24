@@ -18,18 +18,13 @@
 }
 
 .footer__nav ul {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  gap: 1rem;
 }
 
-.footer__nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.footer__nav ul li a {
-  color: #fff;
-  text-decoration: none;
+.footer__nav li a {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .footer__nav ul li a:hover {

@@ -36,6 +36,10 @@
   margin-right: 0.25rem;
 }
 
+.content__title {
+  margin-bottom: 1rem;
+}
+
 .content__description {
   color: grey;
   max-width: 80ch;

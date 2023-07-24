@@ -6,7 +6,7 @@ import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css'],
+  styleUrls: ['./content.component.css', 'content.responsive.component.css'],
 })
 export class ContentComponent implements OnInit {
   photoCover: string = '';

@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+  .content__cover {
+    margin-bottom: 1rem;
+  }
+
+  .content__cover > img {
+    max-width: 100%;
+    border-radius: 0.35rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+}

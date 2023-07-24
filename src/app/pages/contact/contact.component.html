@@ -57,6 +57,16 @@
       formControlName="subject"
       class="contact-form__input"
     />
+    <div
+      *ngIf="
+        contactForm.controls['subject'].invalid &&
+        (contactForm.controls['subject'].dirty ||
+          contactForm.controls['subject'].touched)
+      "
+      class="contact-form__error"
+    >
+      Subject is required
+    </div>
   </div>
 
   <div class="contact-form__field">
@@ -66,6 +76,16 @@
       formControlName="message"
       class="contact-form__input contact-form__textarea"
     ></textarea>
+    <div
+      *ngIf="
+        contactForm.controls['message'].invalid &&
+        (contactForm.controls['message'].dirty ||
+          contactForm.controls['message'].touched)
+      "
+      class="contact-form__error"
+    >
+      Message is required
+    </div>
   </div>
 
   <button type="submit" class="contact-form__button">Submit</button>

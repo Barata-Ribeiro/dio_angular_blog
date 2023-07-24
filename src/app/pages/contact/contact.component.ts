@@ -23,8 +23,6 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  validateForm() {}
-
   onSubmit() {
     if (this.contactForm.valid) {
       let result = this.contactForm.value;
