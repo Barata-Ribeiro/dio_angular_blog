@@ -17,6 +17,9 @@
     display: block;
     color: grey;
   }
+  .small-card__separator.last {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 512px) {

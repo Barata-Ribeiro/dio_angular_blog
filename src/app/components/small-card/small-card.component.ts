@@ -14,4 +14,6 @@ export class SmallCardComponent {
   @Input() photoAlt: string = '';
   @Input() smallCardTitle: string = '';
   @Input() smallCardDescription = '';
+  @Input() isLast!: boolean;
+  @Input() isMobile!: boolean;
 }

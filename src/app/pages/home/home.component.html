@@ -22,12 +22,16 @@
 </main>
 <hr class="home__separator" />
 <section class="articles__more-news">
-  <app-small-card
-    *ngFor="let article of articles.slice(4, 12)"
-    [newsId]="article.id"
-    [photoCover]="article.photo"
-    [photoAlt]="article.photoTitle"
-    [smallCardTitle]="article.articleTitle"
-    [smallCardDescription]="article.articleDescription"
-  ></app-small-card>
+  <section class="articles__more-news">
+    <app-small-card
+      *ngFor="let article of articles.slice(4, 12); let i = index"
+      [newsId]="article.id"
+      [photoCover]="article.photo"
+      [photoAlt]="article.photoTitle"
+      [smallCardTitle]="article.articleTitle"
+      [smallCardDescription]="article.articleDescription"
+      [isLast]="isLastIndex(i)"
+      [isMobile]="isMobile"
+    ></app-small-card>
+  </section>
 </section>

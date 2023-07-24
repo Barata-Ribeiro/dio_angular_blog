@@ -18,5 +18,5 @@
       </div>
     </div>
   </div>
-  <hr class="small-card__separator" />
+  <hr class="small-card__separator" [class.last]="isLast" *ngIf="!isLast" />
 </div>
