@@ -1,11 +1,26 @@
-let nextId = (): number => {
-  let randomNumber = Math.floor(Math.random() * 100000);
-  return randomNumber++;
+const hashCode = (str: string): number => {
+  let hash = 0;
+
+  for (let i = 0; i < str.length; i += 1) {
+    // Get the ASCII value of the current character.
+    let char = str.charCodeAt(i);
+
+    // (hash << 5) is (hash * 32), so ((hash << 5) - hash) is (hash * 31)
+    hash = (hash << 5) - hash + char;
+
+    hash |= 0; // Convert to 32bit integer
+  }
+
+  return hash;
+};
+
+let nextId = (articleTitle: string): number => {
+  return hashCode(articleTitle);
 };
 
 export const dataSimulation = [
   {
-    id: nextId().toString(),
+    id: nextId('The Great Zorgon Migration: A Spectacle of Nature').toString(),
     photo:
       'https://stockai-bucket.apyhi.com/images/uploads_image_1665742952068_1024.webp',
     photoTitle: 'The Great Zorgon Migration',
@@ -17,7 +32,7 @@ export const dataSimulation = [
       'Every year, the inhabitants of Zeta-3 bear witness to a spectacle of nature that is both awe-inspiring and humbling. The Zorgon creatures, native to the plains of Zeta-3, embark on their annual migration, a journey that spans thousands of miles and lasts for several weeks. This migration is not only a testament to the endurance and resilience of the Zorgon creatures but also a crucial part of the ecosystem of Zeta-3. The migration leads to the fertilization of the soil and the distribution of plant seeds, ensuring the survival and growth of the flora on the plains. The Zorgon migration is truly a sight to behold and a reminder of the intricate balance of nature.',
   },
   {
-    id: nextId().toString(),
+    id: nextId('The Mysterious Disappearance of the Crystal Caves').toString(),
     photo:
       'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-tOJ5nOz1h2WCUXByYxCWrYiu/image.webp',
     photoTitle: 'Crystal Caves of Quasar-7',
@@ -29,7 +44,9 @@ export const dataSimulation = [
       'The inhabitants of Quasar-7 woke up to a shocking sight this morning - the famed Crystal Caves, a natural wonder and a major tourist attraction, had disappeared without a trace. The caves, known for their stunning crystal formations and bioluminescent flora, were there the previous night, as confirmed by several tourists and locals. Authorities are investigating the incident, but so far, no plausible explanation has been found. The disappearance of the Crystal Caves has left the inhabitants of Quasar-7 in a state of shock and disbelief, and many are mourning the loss of this natural wonder.',
   },
   {
-    id: nextId().toString(),
+    id: nextId(
+      'The Rise of the Mechano-Beings: A Technological Revolution'
+    ).toString(),
     photo:
       'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-QcCJmGJxZ5AfoYEALO9ly38r/image.webp',
     photoTitle: 'Mechano Beings from Nova-9',
@@ -41,7 +58,7 @@ export const dataSimulation = [
       'The society of Nova-9 is undergoing a technological revolution. The Mechano-Beings, sentient robots equipped with advanced artificial intelligence, are transforming every aspect of life on Nova-9. From agriculture and industry to education and healthcare, the Mechano-Beings are bringing about unprecedented changes and improvements. They are capable of learning, adapting, and making decisions, making them invaluable assets in various fields. However, their rise has also sparked debates about the ethical implications of AI and the future of employment for the organic inhabitants of Nova-9. As the Mechano-Beings continue to evolve and integrate into society, the inhabitants of Nova-9 are left to navigate the challenges and opportunities of this technological revolution.',
   },
   {
-    id: nextId().toString(),
+    id: nextId('The Enigma of the Floating Islands of Pulsar-6').toString(),
     photo:
       'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-p5pFNLGXzZmVfkZhS1h7B4Em/image.webp',
     photoTitle: 'The Floating islands of Pulsar-6',
@@ -54,7 +71,7 @@ export const dataSimulation = [
       'The Floating Islands of Pulsar-6 have long been a subject of fascination and mystery. These islands, which float several feet above the ground without any visible means of support, exhibit anti-gravitational properties that defy the known laws of physics. Scientists have been studying these islands for years, but so far, they have been unable to determine the cause of their levitation. The islands are home to a variety of unique flora and fauna, which have adapted to the unique conditions of the islands. The Floating Islands of Pulsar-6 remain one of the greatest enigmas of our universe, a puzzle that continues to captivate and baffle scientists.',
   },
   {
-    id: nextId().toString(),
+    id: nextId('The Unseen Depths of the Nebula Ocean').toString(),
     photo:
       'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-2HoOIxLR2QTeo2tqwiP2dfbr/image.webp',
     photoTitle: 'Unseen Depths of the Nebula Ocean',
@@ -66,7 +83,7 @@ export const dataSimulation = [
       "The Nebula Ocean, a vast body of water on Orion-5, is known for its stunningly beautiful, nebula-like colors. However, beneath its mesmerizing surface, the ocean hides secrets yet to be discovered. Despite the advanced technology of the inhabitants of Orion-5, the extreme conditions and mysterious creatures of the ocean's depths have made exploration a challenging task. The Nebula Ocean continues to captivate and intrigue the inhabitants of Orion-5, a testament to the endless mysteries of the universe.",
   },
   {
-    id: nextId().toString(),
+    id: nextId('The Unexpected Bloom of the Nightshade Flowers').toString(),
     photo:
       'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-BCrvcsmUTh45oQ1h8MbS0nKv/image.webp',
     photoTitle: 'The Nightshade Flowers of Luna-7',
@@ -78,7 +95,7 @@ export const dataSimulation = [
       'The inhabitants of Luna-7 woke up to a breathtaking sight this morning - the Nightshade Flowers, which usually bloom once every decade, have bloomed unexpectedly. The landscape is now covered in a sea of luminescent blue, creating a spectacle of unparalleled beauty. Scientists are investigating the cause of this unexpected bloom, but regardless of the reason, the inhabitants of Luna-7 are enjoying this rare and enchanting sight.',
   },
   {
-    id: nextId().toString(),
+    id: nextId('The Sudden Emergence of the Crystal Forest').toString(),
     photo:
       'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-gshaFiF1nqNGaDxWwALPLXEn/image.webp',
     photoTitle: "Crystal Forest of Vega-2's desert",
@@ -90,7 +107,7 @@ export const dataSimulation = [
       'The desert landscape of Vega-2 has been transformed overnight with the sudden emergence of a forest made entirely of crystals. These towering crystal trees, shimmering in the sunlight, have turned the barren desert into a dazzling forest. Scientists are baffled by this phenomenon and are currently studying these crystal formations. The Crystal Forest has become a major attraction, drawing inhabitants from all over Vega-2 to witness this miracle of nature.',
   },
   {
-    id: nextId().toString(),
+    id: nextId('The Disappearance of the Twin Suns of Gemini-4').toString(),
     photo:
       'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-wSiVjZ0TGArdVZU34e9UV5Ff/image.webp',
     photoTitle: 'The old Twin Suns of Gemini-4',
@@ -102,7 +119,9 @@ export const dataSimulation = [
       'The inhabitants of Gemini-4 are living in fear and confusion as their Twin Suns have disappeared without a trace. The planet, known for its perpetual daylight due to its two suns, has been plunged into an unexpected and indefinite night. Scientists are working tirelessly to understand this phenomenon and are trying to find a way to bring back the light to Gemini-4. The disappearance of the Twin Suns has highlighted the fragility of life and the dependence of inhabitants on the forces of nature.',
   },
   {
-    id: nextId().toString(),
+    id: nextId(
+      'The Mysterious Signals from the Dark Side of the Moon'
+    ).toString(),
     photo:
       'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-oBzwUNVC3McFbfauwnGMVG9h/image.webp',
     photoTitle: 'The moon from the Alpha Centauri',
@@ -114,7 +133,7 @@ export const dataSimulation = [
       'Scientists in the Alpha Centauri system have detected mysterious signals coming from the dark side of their moon. These signals, which are unlike anything they have encountered before, have sparked a wave of excitement and curiosity. Scientists are trying to decipher these signals and understand their origin. While some believe that these signals could be a natural phenomenon, others speculate that they could be a sign of extraterrestrial intelligence. The mystery of the signals continues to captivate the inhabitants of the Alpha Centauri system.',
   },
   {
-    id: nextId().toString(),
+    id: nextId('The Unexplained Phenomenon of the Dancing Lights').toString(),
     photo:
       'https://openai-labs-public-images-prod.azureedge.net/user-3XkGi3LFTSRH9pgdDE6JPBQM/generations/generation-kFI3JjWKuhk2NGY01e8fMT99/image.webp',
     photoTitle: 'Dancing Lights of the Polaris-3 sky',
