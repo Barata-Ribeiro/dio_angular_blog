@@ -11,12 +11,14 @@
   </section>
   <section class="articles__others">
     <app-small-card
-      *ngFor="let article of articles.slice(1, 4)"
+      *ngFor="let article of articles.slice(1, 4); let i = index"
       [newsId]="article.id"
       [photoCover]="article.photo"
       [photoAlt]="article.photoTitle"
       [smallCardTitle]="article.articleTitle"
       [smallCardDescription]="article.articleDescription"
+      [isLast]="isFirstListLastIndex(i)"
+      [isMobile]="isMobile"
     ></app-small-card>
   </section>
 </main>

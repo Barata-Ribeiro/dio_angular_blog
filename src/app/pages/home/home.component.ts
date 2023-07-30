@@ -23,6 +23,11 @@ export class HomeComponent implements OnInit {
     this.isMobile = event.target.innerWidth < 769;
   }
 
+  isFirstListLastIndex(index: number): boolean {
+    if (this.isMobile) return index === 2;
+    else return false;
+  }
+
   isLastIndex(index: number): boolean {
     if (this.isMobile) return index === 5;
     else return index === 4 || index === 5;
