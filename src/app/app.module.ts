@@ -6,9 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared.module';
 import { PagesModule } from './pages.module';
+import { ImgLazyDirective } from './img-lazy.directive';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ImgLazyDirective],
   imports: [BrowserModule, AppRoutingModule, SharedModule, PagesModule],
   providers: [],
   bootstrap: [AppComponent],
