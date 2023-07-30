@@ -44,7 +44,7 @@ ng s -o
 
 ## 🤝 Contributing
 
-Although this was a course project, if you want to increment on it, just open up a pull request and I'll check it ou. 
+Although this was a course project, if you want to increment on it, just open up a pull request and I'll check it out.
 
 ## 📜 License
 
