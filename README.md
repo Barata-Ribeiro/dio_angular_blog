@@ -1,27 +1,51 @@
-# DioAngularBlog
+# Angular Blog - Sector 67
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+## 🌐 Description
 
-## Development server
+Simple blog developed during an [Angular Course](https://github.com/Barata-Ribeiro/dio_formacao_angular) I've taken to learn about how single page applications work in the Angular development environment. Instead of following a 1:1 approach from the teacher, I made the blog responsive, used more optimized CSS, and incremented the data of the blog using generative AI for both text and photos. Have fun reading through articles from inidivuals of a fake galactic sector.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Built With
 
-## Code scaffolding
+- [Angular 16](https://angular.io/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Project Setup
 
-## Build
+You'll need to have [Node.js](https://nodejs.org/en/download/), [npm](https://www.npmjs.com/get-npm), and the [Angular CLI](https://angular.io/guide/setup-local) installed on your machine.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Install Angular CLI:
 
-## Running unit tests
+```bash
+npm install -g @angular/cli
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Clone the repository:
 
-## Running end-to-end tests
+```bash
+git clone https://github.com/Barata-Ribeiro/dio_angular_blog.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. Navigate to the project folder:
 
-## Further help
+```bash
+cd dio_angular_blog
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the local development server:
+
+```bash
+ng s -o
+```
+
+## 🤝 Contributing
+
+Although this was a course project, if you want to increment on it, just open up a pull request and I'll check it ou. 
+
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
